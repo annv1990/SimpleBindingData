@@ -25,9 +25,22 @@
             android:layout_height="wrap_content"
             android:text="@{user.email}" />
 
+        <ImageView
+            android:link="@{user.link}"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
         <include
             android:id="@+id/content"
             layout="@layout/content_user" />
+
+        <Button
+            android:id="@+id/btnChangeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onChangeInfoClick"
+            android:layout_gravity="center_horizontal"
+            android:text="Change Info" />
 
     </LinearLayout>
 </layout>
